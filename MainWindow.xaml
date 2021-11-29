@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="WpfApp2.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,10,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <telerik:RadListBox x:Name="FruitBox" Width="250" SelectionChanged="FruitBox_SelectionChanged">
+            <telerik:RadListBoxItem Content="Cherry"/>
+            <telerik:RadListBoxItem Content="Apple"/>
+            <telerik:RadListBoxItem Content="Lemon"/>
+            <telerik:RadListBoxItem Content="Banana"/>
+            <telerik:RadListBoxItem Content="Kiwi"/>
+            <telerik:RadListBoxItem Content="Orange"/>
+            <telerik:RadListBoxItem Content="Strawberry"/>
+            <telerik:RadListBoxItem Content="Blackberry"/>
+        </telerik:RadListBox>
+        <Button x:Name="UpButton" Content="UP" HorizontalAlignment="Left" Margin="594,58,0,0" VerticalAlignment="Top" Width="56" Click="UpButton_Click" ClickMode="Press"/>
+        <Button x:Name="DownButton" Content="Down" HorizontalAlignment="Left" Margin="594,105,0,0" VerticalAlignment="Top" Width="56" Click="DownButton_Click"/>
+    </Grid>
+</Window>
